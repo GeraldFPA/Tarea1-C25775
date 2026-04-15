@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine Layout Replica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="top-cards">
+        <article class="top-card image-one">
+          <a class="card-overlay-link" href="#">
+            <span class="tag lifestyle">LIFESTYLE</span>
+            <h2>The Most Popular Places to Visit in the World</h2>
+            <p>Top Places</p>
+          </a>
+        </article>
+        <article class="top-card image-two">
+          <a class="card-overlay-link" href="#">
+            <span class="tag health">HEALTH</span>
+            <h2>Does Exercise Help with your Productivity</h2>
+            <p>Health Chat</p>
+          </a>
+        </article>
+        <article class="top-card image-three">
+          <a class="card-overlay-link" href="#">
+            <span class="tag gaming">GAMING</span>
+            <h2>Can Playing Video Games Help Reduce Stress?</h2>
+            <p>Game Play</p>
+          </a>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <section class="main-column">
+          <article class="featured-post">
+            <a href="#" class="featured-image-link">
+              <img
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
+                alt="Boat in a mountain lake"
+              />
+            </a>
+            <p class="post-category">TRAVEL</p>
+            <h1>Where to Visit on Your Next Vacation</h1>
+            <p class="post-meta">Written by Jane Doe on December 02, 2019</p>
+            <p class="post-excerpt">
+              There are thousands of places you can visit on your next vacation.
+              In this post we'll show you the top destinations to consider for your
+              next adventure...
+            </p>
+            <a href="#" class="read-more">Continue Reading ↗</a>
+          </article>
+
+          <section class="post-grid">
+            <article class="small-post">
+              <a href="#" class="small-image-link">
+                <img
+                  src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=900&q=80"
+                  alt="Friends around campfire"
+                />
+              </a>
+              <h3>Time for the Beach and Friends</h3>
+              <p>
+                Many people live so close to amazing scenery, yet they rarely
+                take...
+              </p>
+              <a href="#" class="read-more">Continue Reading ↗</a>
+            </article>
+
+            <article class="small-post">
+              <a href="#" class="small-image-link">
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+                  alt="Night lake landscape"
+                />
+              </a>
+              <h3>Are you Ready for an Experience?</h3>
+              <p>
+                Check out these awesome places you'll want to visit as you set
+                your...
+              </p>
+              <a href="#" class="read-more">Continue Reading ↗</a>
+            </article>
+
+            <article class="small-post">
+              <a href="#" class="small-image-link">
+                <img
+                  src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=900&q=80"
+                  alt="Kids running in the woods"
+                />
+              </a>
+              <h3>Take Me Back in Time</h3>
+              <p>
+                How nice would that be to go back in time and enjoy the youth...
+              </p>
+              <a href="#" class="read-more">Continue Reading ↗</a>
+            </article>
+
+            <article class="small-post">
+              <a href="#" class="small-image-link">
+                <img
+                  src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=900&q=80"
+                  alt="Man training in gym"
+                />
+              </a>
+              <h3>Here are the Best Ways to Train</h3>
+              <p>
+                Learn about the best ways to train to get the most of your
+                workout...
+              </p>
+              <a href="#" class="read-more">Continue Reading ↗</a>
+            </article>
+          </section>
+        </section>
+
+        <aside class="sidebar">
+          <section class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <p class="newsletter-note">No Spam. Only one email per week.</p>
+
+            <form class="newsletter-form" action="#" method="post" novalidate>
+              <label for="firstName" class="sr-only">First Name</label>
+              <input
+                id="firstName"
+                name="firstName"
+                type="text"
+                placeholder="First Name"
+                required
+              />
+
+              <label for="emailAddress" class="sr-only">Email Address</label>
+              <input
+                id="emailAddress"
+                name="emailAddress"
+                type="email"
+                placeholder="Email Address"
+                required
+              />
+
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+          </section>
+
+          <section class="sidebar-block categories-block">
+            <h3>Categories</h3>
+            <ul class="categories-list">
+              <li><a href="#">Lifestyle</a><span>32</span></li>
+              <li><a href="#">Health</a><span>41</span></li>
+              <li><a href="#">Gaming</a><span>27</span></li>
+              <li><a href="#">Travel</a><span>21</span></li>
+              <li><a href="#">Food</a><span>15</span></li>
+              <li><a href="#">Business</a><span>28</span></li>
+            </ul>
+          </section>
+
+          <section class="sidebar-block recent-posts-block">
+            <h3>Recent Posts</h3>
+
+            <a href="#" class="recent-item">
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=240&q=80"
+                alt="Mountain valley"
+              />
+              <div>
+                <p>Top Destinations to Visit in the World</p>
+                <span>January 02, 2021</span>
+              </div>
+            </a>
+
+            <a href="#" class="recent-item">
+              <img
+                src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=240&q=80"
+                alt="Blue futuristic portrait"
+              />
+              <div>
+                <p>Experience the Future of the 3d Gaming Experience</p>
+                <span>January 04, 2021</span>
+              </div>
+            </a>
+
+            <a href="#" class="recent-item">
+              <img
+                src="https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?auto=format&fit=crop&w=240&q=80"
+                alt="Mountain range with lake"
+              />
+              <div>
+                <p>Take a Trip to The End of The World</p>
+                <span>January 05, 2021</span>
+              </div>
+            </a>
+          </section>
+        </aside>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
